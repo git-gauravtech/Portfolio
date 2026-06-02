@@ -11,6 +11,48 @@ const Projects = () => {
 
   const projectsByDomain = [
     {
+      id: 'domain-aiml',
+      domain: 'AI & ML',
+      projects: [
+        {
+          id: 1,
+          title: 'Vocalis',
+          subtitle: 'AI Interview Simulation Platform with feedback',
+          description: 'AI-powered mock interview platform that analyzes behavioral aspects including eye tracking, facial engagement, and posture using computer vision.',
+          techStack: ['React', 'Python', 'OpenCV', 'TensorFlow'],
+          image: './src/assets/Vocalis.png',
+          link: 'https://github.com/git-gauravtech/vocalis-ai',
+        },
+        {
+          id: 2,
+          title: 'AgroShakti',
+          subtitle: 'AI Powered Smart Farming',
+          description: 'Scalable agriculture platform integrating Node.js APIs with Flask-based ML services. Fine-tuned Meta-Llama 3.1 8B on 48K KCC dataset.',
+          techStack: ['Node.js', 'Flask', 'MongoDB', 'Llama 3.1'],
+          image: './src/assets/agroshakti.png',
+          link: 'https://github.com/robiophantom/AgroShakti',
+        },
+        {
+          id: 3,
+          title: 'Indoor Plant Health Detection System',
+          subtitle: 'Deep-learning based disease detector',
+          description: 'Classify and predict the health of indoor plants by observing the leaves of the plant.',
+          techStack: ['Python', 'Scikit-learn', 'Flask'],
+          image: './src/assets/indoor.png',
+          link: 'https://github.com/git-gauravtech/Indoor-plant-health-detection',
+        },
+        {
+          id: 4,
+          title: 'Vehicle Breakdown Predictor',
+          subtitle: 'ML-Based Maintenance Alert System',
+          description: 'Predicts vehicle breakdown probability using ensemble ML model.',
+          techStack: ['Python', 'Scikit-learn', 'Flask'],
+          image: './src/assets/vbp.png',
+          link: 'https://github.com/git-gauravtech/flask-ml-app',
+        },
+      ]
+    },
+     {
       id: 'domain-fullstack',
       domain: 'Full Stack Web Development',
       projects: [
@@ -20,42 +62,26 @@ const Projects = () => {
           subtitle: 'Micro-Influencer Marketing Platform',
           description: 'Platform connecting businesses with micro-influencers on Instagram for targeted campaigns. Features role-based access control and scalable REST APIs.',
           techStack: ['React', 'Express.js', 'Azure', 'Instagram API'],
-          image: 'https://images.pexels.com/photos/3587627/pexels-photo-3587627.jpeg?auto=compress&cs=tinysrgb&w=600',
-          link: 'https://github.com/gaurav/micromatch',
+          image: './src/assets/mic.png',
+          link: 'https://github.com/keshav-gupta01/micromatch',
         },
-      ]
-    },
-    {
-      id: 'domain-aiml',
-      domain: 'AI & ML',
-      projects: [
         {
           id: 2,
-          title: 'Vocalis',
-          subtitle: 'AI Interview Simulation Platform',
-          description: 'AI-powered mock interview platform that analyzes behavioral aspects including eye tracking, facial engagement, and posture using computer vision.',
-          techStack: ['React', 'Python', 'OpenCV', 'TensorFlow'],
-          image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600',
-          link: 'https://github.com/gaurav/vocalis',
+          title: 'SmartFin',
+          subtitle: 'Personal Finance Management System',
+          description: 'This is a desktop application developed with JavaFX that provides a comprehensive solution for personal finance management. It allows users to track income and expenses, set budgets, manage multiple accounts and custom categories, visualize financial data through interactive charts, and even predict future expenses using AI (Weka).',
+          image: './src/assets/finance.png',
+          link: 'https://github.com/git-gauravtech/SmartFin#smartfin--ai-based-personal-finance-management-system',
         },
         {
           id: 3,
-          title: 'AgroShakti',
-          subtitle: 'AI Powered Smart Farming',
-          description: 'Scalable agriculture platform integrating Node.js APIs with Flask-based ML services. Fine-tuned Meta-Llama 3.1 8B on 48K KCC dataset.',
-          techStack: ['Node.js', 'Flask', 'MongoDB', 'Llama 3.1'],
-          image: 'https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=600',
-          link: 'https://github.com/gaurav/agroshakti',
-        },
-        {
-          id: 4,
-          title: 'Vehicle Breakdown Predictor',
-          subtitle: 'ML-Based Maintenance Alert System',
-          description: 'Predicts vehicle breakdown probability using ensemble ML model.',
-          techStack: ['Python', 'Scikit-learn', 'Flask'],
-          image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&auto=format&fit=crop&q=60',
-          link: 'https://github.com/gaurav/vehicle-predictor',
-        },
+          title: 'Portfolio Website',
+          subtitle: 'About my projects, achievements, education',
+          description: 'Developed a portfolio that contains almost everything about me in different sections',
+          techStack: ['React', 'Express.js', 'Azure', 'Instagram API'],
+          image: './src/assets/protfolio.png',
+          link: 'https://portfolio-nu-peach-93.vercel.app/',
+        }
       ]
     },
     {
