@@ -1,5 +1,5 @@
 import './Projects.css';
-import avatarImg from '../../assets/avatar.png';
+import avatarImg from '../../assets/avatar.webp';
 import vocalis from '../../assets/Vocalis.webp';
 import agro from '../../assets/agroshakti.webp';
 import fina from '../../assets/finance.webp';
