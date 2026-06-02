@@ -1,5 +1,12 @@
 import './Projects.css';
 import avatarImg from '../../assets/avatar.png';
+import vocalis from '../../assets/Vocalis.webp';
+import agro from '../../assets/agroshakti.webp';
+import fina from '../../assets/finance.webp';
+import indoor from '../../assets/indoor.webp';
+import mic from '../../assets/mic.webp';
+import portf from '../../assets/protfolio.webp';
+import vbp from '../../assets/vbp.webp';
 
 const Projects = () => {
   const scrollToDomain = (domainId) => {
@@ -20,7 +27,7 @@ const Projects = () => {
           subtitle: 'AI Interview Simulation Platform with feedback',
           description: 'AI-powered mock interview platform that analyzes behavioral aspects including eye tracking, facial engagement, and posture using computer vision.',
           techStack: ['React', 'Python', 'OpenCV', 'TensorFlow'],
-          image: './src/assets/Vocalis.png',
+          image: vocalis,
           link: 'https://github.com/git-gauravtech/vocalis-ai',
         },
         {
@@ -29,7 +36,7 @@ const Projects = () => {
           subtitle: 'AI Powered Smart Farming',
           description: 'Scalable agriculture platform integrating Node.js APIs with Flask-based ML services. Fine-tuned Meta-Llama 3.1 8B on 48K KCC dataset.',
           techStack: ['Node.js', 'Flask', 'MongoDB', 'Llama 3.1'],
-          image: './src/assets/agroshakti.png',
+          image: agro,
           link: 'https://github.com/robiophantom/AgroShakti',
         },
         {
@@ -38,7 +45,7 @@ const Projects = () => {
           subtitle: 'Deep-learning based disease detector',
           description: 'Classify and predict the health of indoor plants by observing the leaves of the plant.',
           techStack: ['Python', 'Scikit-learn', 'Flask'],
-          image: './src/assets/indoor.png',
+          image: indoor,
           link: 'https://github.com/git-gauravtech/Indoor-plant-health-detection',
         },
         {
@@ -47,7 +54,7 @@ const Projects = () => {
           subtitle: 'ML-Based Maintenance Alert System',
           description: 'Predicts vehicle breakdown probability using ensemble ML model.',
           techStack: ['Python', 'Scikit-learn', 'Flask'],
-          image: './src/assets/vbp.png',
+          image: vbp,
           link: 'https://github.com/git-gauravtech/flask-ml-app',
         },
       ]
@@ -62,7 +69,7 @@ const Projects = () => {
           subtitle: 'Micro-Influencer Marketing Platform',
           description: 'Platform connecting businesses with micro-influencers on Instagram for targeted campaigns. Features role-based access control and scalable REST APIs.',
           techStack: ['React', 'Express.js', 'Azure', 'Instagram API'],
-          image: './src/assets/mic.png',
+          image: mic,
           link: 'https://github.com/keshav-gupta01/micromatch',
         },
         {
@@ -70,7 +77,7 @@ const Projects = () => {
           title: 'SmartFin',
           subtitle: 'Personal Finance Management System',
           description: 'This is a desktop application developed with JavaFX that provides a comprehensive solution for personal finance management. It allows users to track income and expenses, set budgets, manage multiple accounts and custom categories, visualize financial data through interactive charts, and even predict future expenses using AI (Weka).',
-          image: './src/assets/finance.png',
+          image: fina,
           link: 'https://github.com/git-gauravtech/SmartFin#smartfin--ai-based-personal-finance-management-system',
         },
         {
@@ -79,7 +86,7 @@ const Projects = () => {
           subtitle: 'About my projects, achievements, education',
           description: 'Developed a portfolio that contains almost everything about me in different sections',
           techStack: ['React', 'Express.js', 'Azure', 'Instagram API'],
-          image: './src/assets/protfolio.png',
+          image: portf,
           link: 'https://portfolio-nu-peach-93.vercel.app/',
         }
       ]
