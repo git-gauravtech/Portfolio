@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './About.css';
-import avatarImg from '../../assets/avatar.png';
+import avatarImg from '../../assets/avatar.webp';
 
 const About = () => {
   const scrollToSection = (sectionId) => {
