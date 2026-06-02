@@ -1,0 +1,118 @@
+.about {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #09090b 0%, #18181b 50%, #27272a 100%);
+  border-top: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8f9fa;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #8b5cf6, #0ea5e9, #10b981);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 220px;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+  border: 3px solid rgba(139, 92, 246, 0.3);
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: #f8f9fa;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #8b5cf6, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-text p {
+  color: #9ca3af;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.certifications-btn {
+  background: transparent;
+  border: 2px solid #8b5cf6;
+  color: #f8f9fa;
+}
+
+.certifications-btn:hover {
+  background: rgba(139, 92, 246, 0.1);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.resume-btn {
+  background: linear-gradient(135deg, #8b5cf6, #0ea5e9);
+  color: white;
+  border: none;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-text h3 {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
