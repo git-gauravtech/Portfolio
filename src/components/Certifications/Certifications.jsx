@@ -7,7 +7,7 @@ const Certifications = () => {
       name: 'AWS Certified Cloud Practitioner',
       organization: 'Amazon Web Services',
       date: 'Aug 2025',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60' // using a nice placeholder
+      image: 'https://drive.google.com/file/d/1SLoQuRN4LT6ew2Y4xNi0RJkAViNQX78m?w=800&auto=format&fit=crop&q=60' // using a nice placeholder
     },
     {
       id: 2,
