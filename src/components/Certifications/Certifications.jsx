@@ -1,37 +1,58 @@
 import './Certifications.css';
+import awsCertificate from '../../assets/c1.webp';
+import c2 from '../../assets/c2.webp';
+
 
 const Certifications = () => {
   const certs = [
     {
       id: 1,
-      name: 'AWS Certified Cloud Practitioner',
-      organization: 'Amazon Web Services',
-      date: 'Aug 2025',
-      image: 'https://drive.google.com/thumbnail?id=1SLoQuRN4LT6ew2Y4xNi0RJkAViNQX78m&sz=w1000' // using a nice placeholder
+      name: 'Building AI Agents and Agentic Workflows',
+      organization: 'IBM',
+      date: 'May 2026',
+      image: awsCertificate,
+      certificateUrl:
+        'https://drive.google.com/file/d/1rmYE2otsIXES-H3YQmQ7Tn21Xw2sa2sD/view?usp=sharing',
     },
     {
       id: 2,
-      name: 'Deep Learning Specialization',
-      organization: 'Coursera (DeepLearning.AI)',
-      date: 'Jan 2025',
-      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&auto=format&fit=crop&q=60'
-    }
+      name: 'IBM Introduction to Machine Learning',
+      organization: 'Coursera (IBM)',
+      date: 'Feb 2025',
+      image: c2,
+      certificateUrl: 'https://drive.google.com/file/d/1ztjUQ5ymSeevr0cS_0m-A2fz4jWUOGTf/view?usp=sharing',
+    },
   ];
 
   return (
     <section id="certifications" className="certifications">
       <div className="certifications-container">
         <h2 className="section-title">Certifications</h2>
-        
+
         <div className="cert-grid">
-          {certs.map(cert => (
+          {certs.map((cert) => (
             <div key={cert.id} className="cert-card">
               <div className="cert-image-wrapper">
-                <img src={cert.image} alt={cert.name} className="cert-image" />
+                <img
+                  src={cert.image}
+                  alt={cert.name}
+                  className="cert-image"
+                />
+
                 <div className="cert-overlay">
-                  <span className="view-cert-btn">View Certificate</span>
+                  <span
+                    className="view-cert-btn"
+                    onClick={() =>
+                      cert.certificateUrl !== '#'
+                        ? window.open(cert.certificateUrl, '_blank')
+                        : null
+                    }
+                  >
+                    View Certificate
+                  </span>
                 </div>
               </div>
+
               <div className="cert-content">
                 <h3>{cert.name}</h3>
                 <p className="cert-org">{cert.organization}</p>

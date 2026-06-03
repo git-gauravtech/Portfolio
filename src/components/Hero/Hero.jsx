@@ -13,6 +13,8 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-container">
         <div className="hero-content">
+          <br></br>
+          <br></br>
           <h1 className="hero-name">
             Hii<span className="wave">👋</span>, I'm  Gaurav
           </h1>
@@ -46,9 +48,6 @@ const Hero = () => {
             </button>
             <button className="btn btn-outline" onClick={() => scrollToSection('about')}>
               About Me
-            </button>
-            <button className="btn btn-outline" onClick={() => scrollToSection('contact')}>
-              Coding Profiles
             </button>
           </div>
         </div>
