@@ -1,6 +1,6 @@
 import './Certifications.css';
-import awsCertificate from '../../assets/c1.webp';
-import c2 from '../../assets/c2.webp';
+import aiAgentsCertificate from '../../assets/c1.webp';
+import machineLearningCertificate from '../../assets/c2.webp';
 
 
 const Certifications = () => {
@@ -10,7 +10,8 @@ const Certifications = () => {
       name: 'Building AI Agents and Agentic Workflows',
       organization: 'IBM',
       date: 'May 2026',
-      image: awsCertificate,
+      dateTime: '2026-05',
+      image: aiAgentsCertificate,
       certificateUrl:
         'https://drive.google.com/file/d/1rmYE2otsIXES-H3YQmQ7Tn21Xw2sa2sD/view?usp=sharing',
     },
@@ -19,7 +20,8 @@ const Certifications = () => {
       name: 'IBM Introduction to Machine Learning',
       organization: 'Coursera (IBM)',
       date: 'Feb 2025',
-      image: c2,
+      dateTime: '2025-02',
+      image: machineLearningCertificate,
       certificateUrl: 'https://drive.google.com/file/d/1ztjUQ5ymSeevr0cS_0m-A2fz4jWUOGTf/view?usp=sharing',
     },
   ];
@@ -31,7 +33,7 @@ const Certifications = () => {
 
         <div className="cert-grid">
           {certs.map((cert) => (
-            <div key={cert.id} className="cert-card">
+            <article key={cert.id} className="cert-card">
               <div className="cert-image-wrapper">
                 <img
                   src={cert.image}
@@ -40,25 +42,24 @@ const Certifications = () => {
                 />
 
                 <div className="cert-overlay">
-                  <span
+                  <a
                     className="view-cert-btn"
-                    onClick={() =>
-                      cert.certificateUrl !== '#'
-                        ? window.open(cert.certificateUrl, '_blank')
-                        : null
-                    }
+                    href={cert.certificateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Certificate
-                  </span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
                 </div>
               </div>
 
               <div className="cert-content">
                 <h3>{cert.name}</h3>
                 <p className="cert-org">{cert.organization}</p>
-                <span className="cert-date">{cert.date}</span>
+                <time className="cert-date" dateTime={cert.dateTime}>{cert.date}</time>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -1,38 +1,35 @@
 .resume {
-  padding: 6rem 0;
-  background: linear-gradient(180deg, #09090b 0%, #18181b 100%);
-  border-top: 1px solid rgba(139, 92, 246, 0.1);
+  padding: 6.5rem 0;
+  background: var(--paper);
 }
 
 .resume-container {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .subsection-title {
-  font-size: 2rem;
-  color: #f8f9fa;
-  margin-bottom: 2rem;
-  text-align: center;
-  background: linear-gradient(135deg, #ffb700 0%, #f59e0b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin: 0 0 1.6rem;
+  color: var(--ink);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.resume-achievements-title {
+  margin-top: 2.5rem;
 }
 
 .resume-content {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  align-items: start;
+  gap: clamp(3rem, 7vw, 7rem);
 }
 
-/* Golden Path Timeline */
 .golden-timeline {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 2.5rem; /* Give space for the path on the left */
+  padding-left: 1.25rem;
 }
 
 .golden-timeline::before {
@@ -41,119 +38,112 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: 4px;
-  background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 50%, rgba(245, 158, 11, 0) 100%);
-  border-radius: 4px;
+  width: 1px;
+  background: var(--line);
 }
 
 .golden-item {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 1.35rem;
 }
 
 .golden-marker {
   position: absolute;
-  top: 0;
-  left: -2.5rem;
-  margin-left: -10px;
-  width: 24px;
-  height: 24px;
+  top: 0.45rem;
+  left: -1.55rem;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: radial-gradient(circle, #fbbf24 40%, #f59e0b 100%);
-  border: 5px solid #09090b;
-  box-shadow: 0 0 0 3px #fbbf24, 0 0 20px rgba(251, 191, 36, 0.5);
-  z-index: 2;
+  background: var(--teal);
+  box-shadow: 0 0 0 4px var(--paper);
 }
 
 .golden-content {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(245, 158, 11, 0.02));
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(251, 191, 36, 0.2);
-  transition: all 0.3s ease;
-}
-
-.golden-content:hover {
-  border-color: rgba(251, 191, 36, 0.5);
-  transform: translateX(5px);
-  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.1);
+  padding: 0 0 0.5rem;
 }
 
 .golden-content h4 {
-  font-size: 1.35rem;
-  color: #f8f9fa;
+  color: var(--ink);
+  font-size: 1.05rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .golden-year {
   display: inline-block;
-  color: #fbbf24;
-  font-size: 0.9rem;
+  color: var(--teal-dark);
+  font-size: 0.78rem;
   font-weight: 700;
-  background: rgba(251, 191, 36, 0.1);
-  padding: 0.35rem 1rem;
-  border-radius: 50px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.achievement-highlight {
+  display: table;
+  margin: 0.1rem 0 0.55rem;
+  padding: 0.28rem 0.5rem;
+  border-left: 2px solid var(--coral);
+  background: rgba(213, 102, 73, 0.1);
+  color: #873f2d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .golden-course, .golden-desc {
-  color: #d1d5db;
+  color: var(--muted);
   line-height: 1.6;
   margin-bottom: 0.5rem;
-  font-size: 1.05rem;
-}
-
-.golden-score {
-  color: #10b981;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.skill-category {
-  background: rgba(255, 255, 255, 0.02);
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(139, 92, 246, 0.1);
-}
-
-.category-title {
-  color: #8b5cf6;
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
-  padding-bottom: 0.5rem;
-}
-
-.skill-bar-container {
-  margin-bottom: 1.25rem;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-  color: #d1d5db;
   font-size: 0.9rem;
 }
 
-.skill-progress-bg {
-  width: 100%;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
+.golden-score {
+  color: var(--coral);
+  font-weight: 600;
+  font-size: 0.84rem;
 }
 
-.skill-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #8b5cf6, #0ea5e9);
-  border-radius: 4px;
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-category {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.category-title {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-item {
+  padding: 0.35rem 0.55rem;
+  background: var(--paper-light);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 0 1.25rem;
+  }
+
+  .resume-content {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
 }

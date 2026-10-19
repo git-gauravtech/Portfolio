@@ -1,36 +1,33 @@
 .footer {
-  background: linear-gradient(135deg, #050505 0%, #09090b 100%);
-  color: #d1d5db;
-  padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(139, 92, 246, 0.1);
+  background: var(--ink);
+  color: rgba(251, 250, 246, 0.72);
+  padding: 3.5rem 0 1.5rem;
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(251, 250, 246, 0.18);
 }
 
 .footer-logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #8b5cf6 0%, #0ea5e9 50%, #10b981 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--paper-light);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .footer-tagline {
-  color: #9ca3af;
+  color: rgba(251, 250, 246, 0.65);
   line-height: 1.6;
   font-size: 0.95rem;
   max-width: 300px;
@@ -40,7 +37,7 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1.25rem;
-  color: #f8f9fa;
+  color: var(--paper-light);
 }
 
 .footer-section ul {
@@ -54,15 +51,14 @@
 }
 
 .footer-section a {
-  color: #9ca3af;
+  color: rgba(251, 250, 246, 0.68);
   text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
+  transition: color 180ms ease;
+  font-size: 0.88rem;
 }
 
 .footer-section a:hover {
-  color: #8b5cf6;
-  transform: translateX(4px);
+  color: #8dd0c6;
 }
 
 .footer-bottom {
@@ -75,15 +71,19 @@
 }
 
 .footer-bottom p {
-  color: #6b7280;
+  color: rgba(251, 250, 246, 0.55);
   font-size: 0.9rem;
 }
 
 .footer-made {
-  color: #9ca3af;
+  color: rgba(251, 250, 246, 0.68);
 }
 
 @media (max-width: 968px) {
+  .footer-container {
+    padding: 0 1.25rem;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;

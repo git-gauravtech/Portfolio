@@ -44,7 +44,7 @@ const Contact = () => {
         setStatus('error');
         setTimeout(() => setStatus(''), 4000);
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
       setTimeout(() => setStatus(''), 4000);
     }
@@ -57,7 +57,7 @@ const Contact = () => {
       <div className="contact-container">
         <h2 className="section-title">Get In Touch</h2>
         <p className="section-subtitle">
-          Let's discuss your project or collaboration opportunity
+          Interested in my work or have a collaboration in mind? Send me a note.
         </p>
 
         <div className="contact-content">
@@ -188,6 +188,7 @@ const Contact = () => {
           <form 
             className="contact-form" 
             onSubmit={handleSubmit}
+            aria-busy={status === 'sending'}
           >
             <div className={`form-group floating-group ${formData.name ? 'has-value' : ''}`}>
               <input
@@ -228,9 +229,13 @@ const Contact = () => {
             <button
               type="submit"
               className={`submit-btn ${status}`}
+              disabled={status === 'sending'}
             >
-              {status === 'success' ? 'Message Sent!' : 'Send Message'}
+              {status === 'sending' ? 'Sending…' : status === 'success' ? 'Message sent' : 'Send message'}
             </button>
+            <p className="form-status" role="status" aria-live="polite">
+              {status === 'success' ? 'Thanks for reaching out. I will get back to you soon.' : status === 'error' ? 'The message could not be sent. Please try again.' : ''}
+            </p>
           </form>
         </div>
       </div>

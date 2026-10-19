@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import './About.css';
-import avatarImg from '../../assets/avatar.webp';
+import portraitImg from '../../assets/wb.webp';
 
 const About = () => {
   const scrollToSection = (sectionId) => {
@@ -18,18 +17,18 @@ const About = () => {
         <div className="about-content">
           <div className="about-me">
             <div className="about-image">
-              <img src={avatarImg} alt="Gaurav Saklani" className="about-photo" />
+              <img src={portraitImg} alt="Gaurav Saklani in formal attire" className="about-photo" />
             </div>
             <div className="about-text">
-              <h3>Hi, I'm Gaurav</h3>
+              <h3>Hi, I&apos;m Gaurav</h3>
               <p>
-                I'm currently pursuing my B.Tech at Graphic Era Hill University with a focus on AI and ML. I've always been fascinated by how technology can solve real problems, which led me to dive deep into both full-stack development and machine learning.
+                I&apos;m currently pursuing my B.Tech at Graphic Era Hill University with a focus on AI and ML. I&apos;ve always been fascinated by how technology can solve real problems, which led me to dive deep into both full-stack development and machine learning.
               </p>
               <p>
-                Over the past few years, I've built projects ranging from an AI interview simulator (Vocalis) to a smart farming platform (AgroShakti). I enjoy the challenge of taking a complex idea, training the right models, and building a clean, scalable web application around it.
+                Over the past few years, I&apos;ve built projects ranging from an AI interview simulator (Vocalis) to a smart farming platform (AgroShakti). I enjoy the challenge of taking a complex idea, training the right models, and building a clean, scalable web application around it.
               </p>
               <p>
-                When I'm not coding, you can usually find me participating in hackathons, exploring new open-source AI models, or figuring out how to optimize my backend architectures. I simply love learning by building.
+                When I&apos;m not coding, you can usually find me participating in hackathons, exploring new open-source AI models, or figuring out how to optimize my backend architectures. I simply love learning by building.
               </p>
               
               <div className="about-buttons">

@@ -13,40 +13,34 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
-
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} aria-label="Main navigation">
       <div className="navbar-container">
-        <div className="navbar-logo" onClick={() => scrollToSection('hero')}>
+        <a className="navbar-logo" href="#hero" onClick={() => setIsMenuOpen(false)}>
+          <span className="logo-mark">GS</span>
           <span className="logo-text">Gaurav Saklani</span>
+        </a>
+
+        <div id="primary-navigation" className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
+          <a className="navbar-item" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a className="navbar-item" href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+          <a className="navbar-item" href="#research" onClick={() => setIsMenuOpen(false)}>Research</a>
+          <a className="navbar-item" href="#resume" onClick={() => setIsMenuOpen(false)}>Background</a>
+          <a className="navbar-item nav-btn" href="#contact" onClick={() => setIsMenuOpen(false)}>Contact <span aria-hidden="true">↗</span></a>
         </div>
 
-        <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
-          <div className="navbar-item" onClick={() => scrollToSection('hero')}>
-            Home
-          </div>
-          <div className="navbar-item" onClick={() => scrollToSection('about')}>About Me</div>
-          <div className="navbar-item" onClick={() => scrollToSection('projects')}>Projects</div>
-          <div className="navbar-item" onClick={() => scrollToSection('research')}>Research</div>
-          <div className="navbar-item" onClick={() => scrollToSection('resume')}>Resume</div>
-          <div className="navbar-item nav-btn" onClick={() => scrollToSection('contact')}>Contact Me</div>
-        </div>
-
-        <div
+        <button
+          type="button"
           className={`navbar-toggle ${isMenuOpen ? 'active' : ''}`}
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-navigation"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
-        </div>
+        </button>
       </div>
     </nav>
   );

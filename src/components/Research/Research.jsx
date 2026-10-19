@@ -21,10 +21,15 @@ const Research = () => {
       year: '2025',
       title: 'Vehicle Breakdown Prediction: An ML-Based System for Predicting Breakdown Using Ensemble Learning Technique',
       details: '2nd Asian Conference on Intelligent Technologies (ACOIT 2025), Kolar, Karnataka Oct 2025',
+      highlight: {
+        value: '94%',
+        label: 'accuracy',
+        detail: 'on 110,446 vehicle sensor records',
+      },
       link: 'https://www.researchgate.net/publication/402959074_Vehicle_Breakdown_Prediction_An_ML-Based_System_for_Predicting_Breakdown_Using_Ensemble_Learning_Technique',
       bullets: [
-        'Proposed an ensemble ML framework using Voting classifier that combines Logistic Regression, Naive Bayes, and SVM for vehicle breakdown prediction.',
-        'Achieved 94% accuracy with balanced recall on real-world vehicle engine sensor dataset containing 110,446 records with 10 features.'
+        'Proposed an ensemble voting classifier combining Logistic Regression, Naive Bayes, and SVM for vehicle breakdown prediction.',
+        'Evaluation reported balanced recall across 10 sensor features.'
       ],
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -51,6 +56,13 @@ const Research = () => {
                   <span className="research-venue">{item.details}</span>
                 </div>
                 <h3 className="research-title">{item.title}</h3>
+                {item.highlight && (
+                  <div className="research-highlight">
+                    <strong>{item.highlight.value}</strong>
+                    <span>{item.highlight.label}</span>
+                    <small>{item.highlight.detail}</small>
+                  </div>
+                )}
                 <div className="research-impact">
                   {item.bullets.map((bullet, i) => (
                     <p key={i} className="impact-bullet">
