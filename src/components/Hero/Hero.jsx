@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import avatar from '../../assets/avatar.webp';
 import './Hero.css';
 
 const Hero = () => {
@@ -53,9 +54,7 @@ const Hero = () => {
         </div>
         <div className="hero-visual">
           <div className="hero-graphic">
-            <div className="circle circle-1"></div>
-            <div className="circle circle-2"></div>
-            <div className="circle circle-3"></div>
+            <img className="hero-avatar" src={avatar} alt="Gaurav's illustrated avatar" />
           </div>
         </div>
       </div>
