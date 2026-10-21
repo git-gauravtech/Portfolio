@@ -6,8 +6,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <p className="hero-kicker"><span></span> Computer Science & Engineering Undergraduate</p>
-          <p className="hero-kicker"><span></span>· AI/ML · Full-stack Development · Software Development </p>
+          <p className="hero-kicker"><span></span> Computer Science · AI/ML · Full-stack Development </p>
           <h1 className="hero-name">I build software that moves <em>from model to real world.</em></h1>
           <p className="hero-description">
             I&apos;m Gaurav Saklani, a CSE student focused on turning machine learning ideas into useful, well-built products, from the first model to the deployed application.
