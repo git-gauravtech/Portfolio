@@ -24,6 +24,15 @@ const Projects = () => {
         },
         {
           id: 2,
+          title: 'AI Persona - Personal Representative',
+          subtitle: 'The persona can answer questions about my resume, education, projects, GitHub repositories, achievements, and role fit. It can also schedule interviews.',
+          description: 'It is grounded using RAG over my resume, GitHub README files, commit history, and contribution data. It can also check real calendar availability and book or cancel interviews using Cal.com.',
+          techStack: ['Python', 'Vapi', 'FastAPI', 'Cal.com API'],
+          image: persona,
+          link: 'https://github.com/git-gauravtech/AI_persona',
+        },
+        {
+          id: 3,
           title: 'AgroShakti',
           subtitle: 'AI Powered Smart Farming',
           description: 'A farming platform connecting Node.js APIs with Flask ML services, including a Meta-Llama 3.1 8B model fine-tuned on 48K KCC records.',
@@ -32,7 +41,7 @@ const Projects = () => {
           link: 'https://github.com/robiophantom/AgroShakti',
         },
         {
-          id: 3,
+          id: 4,
           title: 'Indoor Plant Health Detection System',
           subtitle: 'Deep-learning based disease detector',
           description: 'Classify and predict the health of indoor plants by observing the leaves of the plant.',
@@ -41,7 +50,7 @@ const Projects = () => {
           link: 'https://github.com/git-gauravtech/Indoor-plant-health-detection',
         },
         {
-          id: 4,
+          id: 5,
           title: 'Vehicle Breakdown Predictor',
           subtitle: 'ML-Based Maintenance Alert System',
           description: 'Predicts vehicle breakdown probability using ensemble ML model.',
@@ -81,6 +90,25 @@ const Projects = () => {
           techStack: ['React', 'Vite', 'CSS'],
           image: portf,
           link: 'https://portfolio-nu-peach-93.vercel.app/',
+        },
+        {
+          id: 4,
+          title: 'Mapify',
+          subtitle: 'An tool for Er diagram to relational database schema conversion and vice versa',
+          description: 'A web application that allows users to convert ER diagrams to relational database schemas and vice versa, facilitating database design and understanding.',
+          techStack: ['HTML', 'JavaScript', 'Gojs', 'CSS'],
+          image: mapify,
+          link: 'https://github.com/VanshRai7000/Mapify'
+        },
+        {
+          id: 5,
+          title: 'QuestForge',
+          subtitle: 'An enterprise-grade, full-stack AI assessment generation system.',
+          description: 'A full-stack web application that enables educators to automatically create high-quality, customized question papers, quizzes, and structured examinations from uploaded study materials (PDFs, images) or raw topics in seconds.',
+          techStack: ['WebSocket', 'Redis', 'Node.js', 'Express.js', 'MongoDB'],
+          image: quest,
+          link: 'https://github.com/git-gauravtech/QuestForge'
+
         }
       ]
     }
