@@ -17,8 +17,8 @@ const Hero = () => {
           </div>
           <div className="hero-proof" aria-label="Selected achievements">
             <div><strong>8.96</strong><span>CGPA / 10</span></div>
-            <div><strong>94%</strong><span>reported model accuracy</span></div>
-            <div><strong>2025</strong><span>patent application</span></div>
+            <div><strong>Ranked Under top 1000 </strong><span>in Amazon ML Challenge</span></div>
+            <div><strong>2025</strong><span>Research paper & Patent application</span></div>
           </div>
         </div>
         <div className="hero-visual">

@@ -20,9 +20,9 @@ const About = () => {
               <img src={portraitImg} alt="Gaurav Saklani in formal attire" className="about-photo" />
             </div>
             <div className="about-text">
-              <h3>Hi, I&apos;m Gaurav</h3>
+              <h3>Hello, Greetings of the day!I&apos;m Gaurav</h3>
               <p>
-                I&apos;m currently pursuing my B.Tech at Graphic Era Hill University with a focus on AI and ML. I&apos;ve always been fascinated by how technology can solve real problems, which led me to dive deep into both full-stack development and machine learning.
+                I&apos;m currently pursuing my B.Tech at Graphic Era Hill University with specialization in AI and ML. I&apos;ve always been fascinated by how technology can solve real problems, which led me to dive deep into both full-stack development and machine learning.
               </p>
               <p>
                 Over the past few years, I&apos;ve built projects ranging from an AI interview simulator (Vocalis) to a smart farming platform (AgroShakti). I enjoy the challenge of taking a complex idea, training the right models, and building a clean, scalable web application around it.
