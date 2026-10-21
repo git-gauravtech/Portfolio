@@ -11,7 +11,7 @@
 
 .subsection-title {
   margin: 0 0 1.6rem;
-  color: var(--ink);
+  color: rgba(243, 66, 66, 0.904);
   font-size: 1.45rem;
   font-weight: 600;
 }

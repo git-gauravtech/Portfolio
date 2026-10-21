@@ -20,7 +20,7 @@ const About = () => {
               <img src={portraitImg} alt="Gaurav Saklani in formal attire" className="about-photo" />
             </div>
             <div className="about-text">
-              <h3>Hello, Greetings of the day!I&apos;m Gaurav</h3>
+              <h3>Hello, Greetings of the day!, I&apos;m Gaurav</h3>
               <p>
                 I&apos;m currently pursuing my B.Tech at Graphic Era Hill University with specialization in AI and ML. I&apos;ve always been fascinated by how technology can solve real problems, which led me to dive deep into both full-stack development and machine learning.
               </p>
