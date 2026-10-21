@@ -50,9 +50,10 @@ const Resume = () => {
   ];
 
   const skillsData = {
-    'AI & machine learning': ['Python', 'TensorFlow', 'OpenCV', 'Scikit-learn', 'Flask'],
-    'Product development': ['React', 'JavaScript', 'Node.js', 'Express.js', 'REST APIs'],
-    'Data & tools': ['MongoDB', 'MySQL', 'Git', 'Azure', 'Java', 'C++'],
+    'Programming Languages': ['C', 'C++', 'Python', 'Java', 'JavaScript'],
+    'AI & machine learning': ['Python', 'TensorFlow', 'OpenCV', 'Scikit-learn', 'FastAPI'],
+    'Product development': ['React', 'Node.js', 'Express.js', 'REST APIs'],
+    'Data & tools': ['Git', 'GitHub', 'MongoDB', 'MySQL', 'AWS'],
   };
 
   return (
