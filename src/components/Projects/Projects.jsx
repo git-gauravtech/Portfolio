@@ -6,6 +6,9 @@ import indoor from '../../assets/indoor.webp';
 import mic from '../../assets/mic.webp';
 import portf from '../../assets/protfolio.webp';
 import vbp from '../../assets/vbp.webp';
+import persona from '../../assets/persona.webp';
+import mapify from '../../assets/mapify.webp';
+import quest from '../../assets/quest.webp';
 
 const Projects = () => {
   const projectsByDomain = [
